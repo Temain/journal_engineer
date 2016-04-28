@@ -6,7 +6,7 @@ class EquipmentController < ApplicationController
 
   def index
     @equipment = Equipment.search(params[:search]).page params[:page]
-    @categories = Category.all.order('name')
+    @categories = Category.all.order('id')
 
     if request.xhr?
       respond_to do |format|
