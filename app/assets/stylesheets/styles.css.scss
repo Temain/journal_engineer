@@ -19,30 +19,57 @@ input[type="text"]:focus,
 input[type="email"]:focus,
 input[type="password"]:focus,
 textarea.form-control:focus {
-  border: 1px solid #df691a;
-  box-shadow: 0 0 5px rgb(255, 92, 2);
-  -webkit-box-shadow: 0 0 5px rgb(255, 92, 2);
-  -moz-box-shadow: 0 0 5px rgb(255, 92, 2);
+  border: 1px solid #fad82e;
+  box-shadow: 0 0 2px rgb(255, 228, 94);
+  -webkit-box-shadow: 0 0 2px rgb(255, 228, 94);
+  -moz-box-shadow: 0 0 2px rgb(255, 228, 94);
 }
 
 .btn {
   box-shadow: none;
 }
 
+html,body, .container-fluid, .full-height, .wrap
+{
+  height:100%;
+}
+
+select {
+  border: 1px #ccc solid !important;
+}
+
 body {
-  background-color: #4e5d6c;
+  // background-color: #4e5d6c;
+  background: #f6f5f3;
+
+  .wrap {
+    background: white;
+    padding: 0px;
+  }
+
+  .search-form {
+    margin: 10px;
+  }
+
+  .fixed-top {
+    position: fixed;
+    background-color: white;
+    width: 50%;
+    opacity: 0.8;
+  }
 
   .menu-base {
     position: fixed;
-    background-color: #2b3e50;
+    // background-color: #2b3e50;
     padding: 5px;
     z-index: 99;
 
     .menu-item {
       display: inline-block;
-      padding: 5px;
+      padding: 5px 10px;
       & > a > i:hover {
-        color: #ffffff;
+        // color: #ffffff;
+        color: black;
       }
 
       .dropdown-menu {
@@ -100,15 +127,40 @@ body {
     }
   }
 
+  .reports-dropdown {
+    bottom: 40px !important;
+    left: 120px !important;
+    top: auto !important;
+    font-size: 1em !important;
+  }
+
+  .company {
+    color: rgba(78, 93, 108, 0.79);
+    text-align: center;
+    font-weight: bold;
+  }
+
   .menu {
     @extend .menu-base;
-    right: 0px;
-    top: 0px;
+    // right: 0px;
+    bottom: 0px;
+    width: 50%;
+    border-top: solid 2px #F6F5F3;
+    background: white;
+
+    .user-name {
+      font-size: 0.9em;
+      display: inline-block;
+    }
+
+    .text-muted {
+      color: rgba(78, 93, 108, 0.79);
+    }
   }
 
   .back {
     @extend .menu-base;
-    left: 0px;
+    left: 25%;
     top: 0px;
 
     .text-muted {
@@ -144,6 +196,7 @@ body {
     bottom: 0;
     left: 0;
     right: 0;
+    //background-image: url(intro-bg.jpg);
 
     .page-buffer {
       height: 20px;
@@ -183,12 +236,20 @@ body {
       border-top: 1px solid #eee;
     }
 
+    .super-large {
+      font-size: 4em;
+    }
+
+    .super-small {
+      font-size: 1.6em;
+    }
+
     .center {
       padding: 30px;
       display: table-cell;
       vertical-align: middle;
       float: none;
-      background-color: #2b3e50;
+      background-color: white;
     }
 
     .input-group {
@@ -322,10 +383,10 @@ body {
 }
 
 select {
-  border: 0 !important;  /*Removes border*/
+  // border: 0 !important;  /*Removes border*/
   -webkit-appearance: none;  /*Removes default chrome and safari style*/
   -moz-appearance: none; /* Removes Default Firefox style*/
-  background: #ffffff url(down.png) no-repeat 96% center !important;
+  background: #ffffff url(down.png) no-repeat 98% center !important;
   width: 100px; /*Width of select dropdown to give space for arrow image*/
   text-indent: 0.01px; /* Removes default arrow from firefox*/
   text-overflow: "";  /*Removes default arrow from firefox*/ /*My custom style for fonts*/

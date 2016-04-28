@@ -28,6 +28,8 @@ ready = ->
   $('#log-out-link').popover()
   $('#back-link').popover();
   $('#reports-link').popover();
+  $('#add-link').popover();
+  $('#import-link').popover();
   $('pdf-link').popover();
 
   # scroll link

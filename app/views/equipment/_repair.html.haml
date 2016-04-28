@@ -10,20 +10,20 @@
           %fieldset
             .form-group
               = label :action_date, "Дата ремонта", class: "control-label"
-              .col-lg-12
+              %div
                 #datetimepicker.input-group.date{ "data-date-format" => "DD.MM.YYYY" }
                   = text_field_tag :action_date, nil, class: "form-control"
-                  %span.input-group-addon.dark
+                  %span.input-group-addon
                     %span.glyphicon.glyphicon-calendar
 
             .form-group
               = label :reason, "Причина ремонта", class: "control-label"
-              .col-lg-12
+              %div
                 = text_area :reason, nil, rows: 5, :placeholder => 'Укажите причину ремонта...', class: "form-control"
 
             .form-group
               = label "spares", "Замененные детали", class: "control-label"
-              .col-lg-12
+              %div
                 = hidden_field_tag "spares", nil, class: "form-control"
                 -#= select 'e1', nil, [], {}, id: "spares", class: "form-control", multiple: true
 

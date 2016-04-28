@@ -125,11 +125,11 @@ div.timelineMajor {
 	}
 
 	.timelineMajor h2 span {
-		background:#ccc;
+		background: rgba(43, 62, 80, 0.73);
 		-webkit-border-radius:4px;
 		-moz-border-radius:4px;
 		border-radius:4px;
-        color:#2b3e50;
+        color: white;
 		letter-spacing:.1em;
 		line-height:1.7em;
 		padding:3px 5px 1px;
@@ -169,12 +169,12 @@ dl.timelineMinor {
 
 		.timelineMinor dt a.open {
 			/*color:#7DBADF;*/
-            color: #ffffff;
+            color: black;
 		}
 
 		.timelineMinor dt a:hover {
 			/*color:#7DBADF;*/
-            color: #ffffff;
+            color: black;
             text-decoration: none;
 		}
 
@@ -184,7 +184,7 @@ dl.timelineMinor {
 	}
 
 		.timelineMinor dd h3 {
-			color:#FFF;
+			color:black;
 			clear:both;
 			float:left;
 			font-size:1.5em;
